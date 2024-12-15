@@ -1,7 +1,7 @@
-# Noeud2Conway
+# Conway's nodes
 
 Bienvenue dans mon projet! Voici quelques rappels rapides pour travailler avec Git.
-Je ne suis l'auteur que du include/  (hors include/SDL2 ) et du  src/
+Je suis l'auteur du include/  (hors include/SDL2 ) et du  src/
 
 ### Avant Utilisation /!\
 Ce projet est compilé avec CMake c'est à dire qu'avant tout vous devrez supprimer tout les fichier de build/.
