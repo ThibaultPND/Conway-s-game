@@ -1,44 +1,61 @@
-# Noeud de Conway
+# Conway's Nodes
 
-Noeud de Conway est une implémentation du célèbre **Jeu de la vie** de Conway en C++ utilisant la librairie **SDL2** pour l'affichage graphique. Ce projet simule l'évolution d'une grille de cellules selon des règles simples d'automate cellulaire. Dans cette version, l'avancement du temps (la génération suivante) se déclenche par l'appui sur la touche **Espace**.
+Conway's Nodes is an implementation of Conway's Game of Life in C++ using the SDL2 library for graphical rendering. In this project, a grid of cells evolves according to the classic rules of cellular automata. The simulation advances one generation at a time by pressing the **Space** key.
 
-## Table des matières
+## Table of Contents
 
 - [Description](#description)
-- [Fonctionnalités](#fonctionnalités)
-- [Prérequis](#prérequis)
-- [Compilation et Exécution](#compilation-et-exécution)
-- [Captures d'écran](#captures-décran)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Build and Run](#build-and-run)
+- [Screenshots](#screenshots)
 - [Contribution](#contribution)
-- [Licence](#licence)
-- [Cloner le Repository](#cloner-le-repository)
+- [License](#license)
+- [Cloning the Repository](#cloning-the-repository)
 
 ## Description
 
-Le Jeu de la vie est un automate cellulaire où chaque cellule d'une grille évolue en fonction de règles précises appliquées aux cellules voisines. Dans **Noeud de Conway**, chaque cellule est soit vivante, soit morte, et les règles d'évolution sont appliquées à chaque "tic" de l'horloge, que vous pouvez déclencher en appuyant sur la touche **Espace**.
+Conway's Game of Life is a cellular automaton where each cell on a grid is either alive or dead. The state of each cell evolves based on a set of simple rules that take into account the status of neighboring cells. **Conway's Nodes** is a straightforward implementation designed to demonstrate that the concept can be realized quickly. In this version, each generation is manually triggered by pressing the **Space** key.
 
-Cette version a été réalisée rapidement dans le but de montrer qu'il était possible d'implémenter le concept en peu de temps. Des améliorations pourront être apportées au fil des contributions de la communauté.
+## Features
 
-## Fonctionnalités
+- **Simulation of Conway's Game of Life:** Implements the classic rules of cellular automata.
+- **Manual Control:** Advance the simulation generation by generation by pressing the **Space** key.
+- **Graphical Output:** Uses the **SDL2** library to display the evolving grid of cells.
 
-- Simulation du Jeu de la vie avec des règles classiques d'automate cellulaire.
-- Contrôle manuel de l'évolution des générations (avancement avec la touche **Espace**).
-- Utilisation de la librairie **SDL2** pour un rendu graphique simple et efficace.
+## Requirements
 
-## Prérequis
+- **CMake:** For configuring and generating build files.
+- **SDL2:** Library for handling graphics.
+- A C++ compiler that supports modern C++ standards.
 
-- **CMake** pour la configuration et la génération des fichiers de build.
-- **SDL2** pour la gestion graphique.
-- Un compilateur supportant le C++.
+## Build and Run
 
-## Compilation et Exécution
+Follow these steps to compile and run the project. You can copy and paste the following commands into your terminal:
 
-Pour compiler et exécuter le projet, suivez ces étapes :
+```bash
+# Clone the repository (if you haven't already)
+git clone https://github.com/ThibaultPND/Noeud2Conway.git
 
-1. **Cloner le dépôt** (voir la section ci-dessous).
+# Navigate to the project directory
+cd Noeud2Conway
 
-2. **Créer un dossier de build** et y accéder :
+# Create a build directory and navigate into it
+mkdir build
+cd build
 
-   ```bash
-   mkdir build
-   cd build
+# Generate the build files using CMake
+cmake ..
+
+# Compile the project
+make
+
+# Run the executable
+./ConwaysNodes
+```
+Once the program is running, press the **Space** key to advance to the next generation.
+
+## Screenshots
+Below there are screenshots of the  in action.
+
+![Exemple Screenshot](/assets/screen1.png)
