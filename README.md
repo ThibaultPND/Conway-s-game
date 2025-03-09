@@ -1,51 +1,44 @@
-# Conway's nodes
+# Noeud de Conway
 
-Bienvenue dans mon projet! Voici quelques rappels rapides pour travailler avec Git.
-Je suis l'auteur du include/  (hors include/SDL2 ) et du  src/
+Noeud de Conway est une implémentation du célèbre **Jeu de la vie** de Conway en C++ utilisant la librairie **SDL2** pour l'affichage graphique. Ce projet simule l'évolution d'une grille de cellules selon des règles simples d'automate cellulaire. Dans cette version, l'avancement du temps (la génération suivante) se déclenche par l'appui sur la touche **Espace**.
 
-### Avant Utilisation /!\
-Ce projet est compilé avec CMake c'est à dire qu'avant tout vous devrez supprimer tout les fichier de build/.
-Sauf SDL2.dll et sdl2-config.
-Et refaire une configuration (le logiciel CMake gère tout seul sur VisualStudioCode).
+## Table des matières
 
-## Cloner le Repository
+- [Description](#description)
+- [Fonctionnalités](#fonctionnalités)
+- [Prérequis](#prérequis)
+- [Compilation et Exécution](#compilation-et-exécution)
+- [Captures d'écran](#captures-décran)
+- [Contribution](#contribution)
+- [Licence](#licence)
+- [Cloner le Repository](#cloner-le-repository)
 
-Si vous n'avez pas encore le projet sur votre machine locale, utilisez la commande suivante pour le cloner :
+## Description
 
-```bash
-git clone https://github.com/ThibaultPND/Noeud2Conway.git
-```
+Le Jeu de la vie est un automate cellulaire où chaque cellule d'une grille évolue en fonction de règles précises appliquées aux cellules voisines. Dans **Noeud de Conway**, chaque cellule est soit vivante, soit morte, et les règles d'évolution sont appliquées à chaque "tic" de l'horloge, que vous pouvez déclencher en appuyant sur la touche **Espace**.
 
+Cette version a été réalisée rapidement dans le but de montrer qu'il était possible d'implémenter le concept en peu de temps. Des améliorations pourront être apportées au fil des contributions de la communauté.
 
-## Récupérer les Dernières Modifications
+## Fonctionnalités
 
-Avant de commencer à travailler, assurez-vous d'avoir les dernières modifications du dépôt :
+- Simulation du Jeu de la vie avec des règles classiques d'automate cellulaire.
+- Contrôle manuel de l'évolution des générations (avancement avec la touche **Espace**).
+- Utilisation de la librairie **SDL2** pour un rendu graphique simple et efficace.
 
-```bash
-git pull origin main
-```
+## Prérequis
 
+- **CMake** pour la configuration et la génération des fichiers de build.
+- **SDL2** pour la gestion graphique.
+- Un compilateur supportant le C++.
 
-## Ajouter et Valider vos Modifications
+## Compilation et Exécution
 
-Ajoutez vos fichiers modifiés au suivi de Git et effectuez un commit :
-```bash
-git add .
-git commit -m "Description concise des modifications"
-```
+Pour compiler et exécuter le projet, suivez ces étapes :
 
+1. **Cloner le dépôt** (voir la section ci-dessous).
 
-## Envoyer vos Modifications sur GitHub
+2. **Créer un dossier de build** et y accéder :
 
-Poussez vos modifications vers le dépôt sur GitHub :
-
-```bash
-git push origin main
-```
-
-## Ajout rapide :
-```bash
-git add .
-git commit -m "modifications"
-git push origin main
-```
+   ```bash
+   mkdir build
+   cd build
